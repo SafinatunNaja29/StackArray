@@ -7,4 +7,10 @@ public:
     int data;
     Node* next;
 
+
+    Node(int element) {
+        data = element;
+        next = NULL;
+    }
+
 };
