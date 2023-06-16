@@ -53,3 +53,33 @@ public:
 int main() {
 	StackArray s; 
 	char ch;
+	while (true) {
+		cout << endl;
+		cout << "\n----Stack Menu----\n";
+		cout << "1. Push\n";
+		cout << "2. Pop\n";
+		cout << "3. Display\n";
+		cout << "4. Exit\n";
+		cout << "\nEnter your choice :";
+		cin >> ch;
+		switch (ch) {
+		case '1': {
+			s.push();
+			break;
+		}
+		case '2':
+			if (s.empty()) {
+				cout << "\nStack is empty." << endl;
+				break;
+			}
+		case '3':
+			s.display();
+			break;
+		case '4':
+			return 0;
+		default:
+			cout << "\nInvalid choice" << endl;
+			break;
+		}
+	}
+}
