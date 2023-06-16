@@ -12,5 +12,8 @@ public:
         data = element;
         next = NULL;
     }
+};
+
+class StackLinkedList {
 
 };
