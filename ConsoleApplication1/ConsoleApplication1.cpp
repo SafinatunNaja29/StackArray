@@ -18,5 +18,9 @@ class StackLinkedList {
 private:
     Node* top;
 
-
+public:
+    // Constructor
+    StackLinkedList() {
+        top = NULL;
+    }
 };
